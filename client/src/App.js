@@ -34,13 +34,13 @@ class App extends Component{
   }
 
   makeMove = (i,j)=>{
-    if(this.state.turn == ''){
+    if(this.state.turn === ''){
       this.createNewGame()
     } else {
       let tempArr = this.state.theGrid
       if(tempArr[i][j] !== 'X' && tempArr[i][j] !== 'O'){
         tempArr[i][j] = this.state.turn
-        this.setState({ turn: this.state.turn == 'X'?'O':'X'})
+        this.setState({ turn: this.state.turn === 'X'?'O':'X'})
       }
       this.checkIfWin() 
     }

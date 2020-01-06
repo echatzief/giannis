@@ -1,5 +1,4 @@
 import React,{Component} from 'react'
-import {Row,Col} from 'antd'
 import PropTypes from 'prop-types'
 
 class Turn extends Component{

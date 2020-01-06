@@ -2,9 +2,6 @@ import React,{Component} from 'react'
 import {Row,Col,Form,Input,Icon,Button} from 'antd'
 import userAuth from '../auth/userAuth'
 class Login extends Component{
-  constructor(props){
-    super(props)
-  }
   handleSubmit = e => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {

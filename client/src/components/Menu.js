@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import {Row,Col,Button,Icon} from 'antd'
 import PropTypes from 'prop-types'
-import userAuth from '../auth/userAuth'
+
 class Menu extends Component{
   render(){
     return(
